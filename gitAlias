@@ -1,0 +1,16 @@
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --abbrev-commit
+    st = status -sb --ignore-submodules
+    p = push
+    pf = push --force-with-lease
+    pn = push --no-verify
+    pfn = push --force-with-lease --no-verify
+    co = checkout
+    cb = checkout -b
+    dnr = diff --name-status -C --relative
+    oops = commit --amend --no-edit
+    bg = bisect good
+    bb = bisect bad
+    refs = for-each-ref --sort=-committerdate --format='%(color:red bold)%(refname:short)%(color:reset) %(color:yellow)%(committerdate:relative)%(color:reset) %(color:magenta bold)%(authorname)%(color:reset) %(color:green)%(objectname:short)%(color:reset) %(contents:subject)'
+    lbs = !git refs refs/heads
+    rbs = !git refs refs/remotes
+    nuke = reset --hard HEAD
