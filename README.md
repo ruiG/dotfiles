@@ -1,2 +1,2 @@
-# gitalias
-My collection of git Alias
+# .Dotfiles
+My collection of .dotfiles
